@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suthakaran NM | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/Site Icon.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <div class="sidebar">
+      <div>
+        <div class="logo">
+          <a href="index.html"><img src="img/suthakaran logo.webp" alt="" /></a>
+        </div>
+        <nav>
+          <a href="index.html#home" class="active"
+            ><i class="fa fa-home"></i> Home</a
+          >
+          <a href="index.html#about"><i class="fa fa-user"></i> About</a>
+          <a href="index.html#services"><i class="fa fa-list"></i>Services</a>
+          <a href="index.html#portfolio"
+            ><i class="fa fa-briefcase"></i>Portfolio</a
+          >
+          <a href="index.html#contact"><i class="fa fa-comments"></i>Contact</a>
+        </nav>
+      </div>
+      <button class="signup-btn">
+        <a href="account.html">Client Login</a>
+      </button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Hero Section -->
+      <div class="intro-login-page">
+        <img src="img/loginbanner.webp" alt="Hero-login" />
+        <div class="centered"><h1>Client Login</h1></div>
+      </div>
+
+      <!-- Login Page -->
+
+      <div class="account">
+        <section class="login-page">
+          <h2>Login to Your Account</h2>
+          <form class="login-form">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <p>
+          &copy; <span id="year"></span> SUTHAKARAN NM. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
