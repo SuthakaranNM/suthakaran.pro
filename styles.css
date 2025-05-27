@@ -615,13 +615,13 @@ nav a i {
   }
 
   .text h1 {
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
   }
 
   .text ol li span {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(20deg, cyan, magenta);
     -webkit-background-clip: text;
