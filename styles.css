@@ -398,6 +398,7 @@ nav a i {
   padding: 50px;
   padding-top: 70px;
   border-radius: 6px;
+  margin-bottom: 30px;
 }
 
 .contact-form input,
@@ -432,7 +433,7 @@ nav a i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
 }
 
 .contact-cards {
@@ -590,6 +591,8 @@ nav a i {
   background-color: #da1778;
 }
 
+/* Media Query */
+
 @media (max-width: 768px) {
   .sidebar {
     display: none;
@@ -597,6 +600,32 @@ nav a i {
 
   .main-content {
     margin-left: 0;
+  }
+
+  .particles-js {
+    height: 50vh;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+
+  .text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .text ol li span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(20deg, cyan, magenta);
+    -webkit-background-clip: text;
+    white-space: nowrap;
   }
 
   .about,
