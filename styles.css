@@ -622,10 +622,6 @@ nav a i {
   .text ol li span {
     font-size: 1.5rem;
     font-weight: 600;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(20deg, cyan, magenta);
-    -webkit-background-clip: text;
-    white-space: nowrap;
   }
 
   .about,
