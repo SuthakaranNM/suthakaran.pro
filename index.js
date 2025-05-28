@@ -1,4 +1,8 @@
+// Automatically set the current year in the footer
+
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Smooth scrolling for navigation links
 
 let section = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("aside nav a");
@@ -20,3 +24,13 @@ window.onscroll = () => {
     }
   });
 };
+
+// Hamburger menu functionality
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  mobileMenu.classList.toggle("show");
+});

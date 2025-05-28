@@ -53,6 +53,16 @@ nav {
   gap: 20px;
 }
 
+/* nav a {
+  display: block;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 5px 15px;
+  border-bottom: 1px solid #302f2f;
+} */
+
 nav a {
   display: block;
   text-decoration: none;
@@ -594,6 +604,12 @@ nav a i {
 
 /* Media Query */
 
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .sidebar {
     display: none;
@@ -637,4 +653,83 @@ nav a i {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Burger Menu */
+
+.hamburger {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  /* margin: 5px 0; */
+  margin-top: 0;
+  margin-bottom: 5px;
+  position: relative;
+  top: 10px;
+  left: 5px;
+
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+/* Animation states */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background: #222;
+  transition: 0.3s ease;
+  z-index: 1000;
+  padding-top: 4rem;
+}
+
+/* .mobile-menu ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.mobile-menu ul li {
+  margin: 1.5rem 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+} */
+
+.mobile-menu.show {
+  left: 0;
+}
+
+.logo a {
+  border-bottom: none;
+}
+
+.signup-btn a {
+  border-bottom: none;
 }
