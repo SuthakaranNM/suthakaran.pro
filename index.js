@@ -34,3 +34,12 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   mobileMenu.classList.toggle("show");
 });
+
+// Close mobile menu when a link is clicked
+const mobileLinks = document.querySelectorAll("#mobileMenu a");
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    mobileMenu.classList.remove("show");
+  });
+});
